@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HabitFlow - AI Habit Coach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌊 HabitFlow</h1>
+            <p class="tagline">Cultivate your daily rituals.</p>
+        </header>
+
+        <div class="main-grid">
+            <!-- Left Panel: Habits -->
+            <div class="habits-panel">
+                <div class="add-habit">
+                    <input type="text" id="habitName" placeholder="e.g., Meditate, Read, Exercise" maxlength="50">
+                    <select id="habitFrequency">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                    </select>
+                    <button id="addHabitBtn">+ Add</button>
+                </div>
+
+                <div id="habitsList" class="habits-list">
+                    <!-- Habits will be loaded here -->
+                </div>
+
+                <div class="stats">
+                    <h3>📊 Today's Progress</h3>
+                    <div id="todayProgress">0/0 completed</div>
+                </div>
+            </div>
+
+            <!-- Right Panel: AI Coach -->
+            <div class="chat-panel">
+                <div class="chat-header">
+                    <h3>🤖 AI Habit Coach</h3>
+                    <p>Get personalized advice based on your habits</p>
+                </div>
+                
+                <div id="chatMessages" class="chat-messages">
+                    <div class="message assistant">
+                        👋 Hi! I'm your AI habit coach. Ask me anything about building habits, staying motivated, or breaking bad patterns!
+                    </div>
+                </div>
+                
+                <div class="chat-input-area">
+                    <input type="text" id="chatInput" placeholder="Ask for advice..." maxlength="200">
+                    <button id="sendMessageBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
